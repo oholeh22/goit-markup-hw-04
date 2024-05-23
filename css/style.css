@@ -207,6 +207,17 @@ section {
 
 .main-section {
     background: #2e2f42;
+    background-image:
+    linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NFkyKyy~Gglyc-mqV3Tyk~4BKLvTAAHh6N8TLiAdcpD702W~WE9jIMQmygDQ1pVhtTgKdXPV0lw1YzaQEHk6BtImvfXqLmWz-XJfCq0gcjWdkOWC0hGlhrtR2li8xLjFUxKc9YFpzKyRLfRo3Yp6nY5fEzkUeP4s-ELyvBhXVia6f5oX8grqLKIO6m-WDaq8b7YvKbHnkMVdhsszx8ld2l0PXz5ijp13EXbifopzwN6Xg1h6ljbDtlruNFAKqcmslwytcB2qsCk5bl4PQc3EiVMpq4lVSqvsPSOd7fmN-r3OA0r4bWqm7lrKi5pg2thlK5Vhti2KlDcVVdSJSuwn2A__);
+    background-repeat: no-repeat;
+    color: #fff;
+    background-position: center center;
+    background-size: cover;
 }
 
 .first-section {

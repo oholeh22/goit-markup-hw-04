@@ -243,6 +243,18 @@ section {
     padding-left: 0;
 }
 
+.features-img {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .button-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -327,6 +339,8 @@ section {
 .list-team {
     text-decoration: none;
     list-style-type: none;
+    display: flex;
+    gap: 24px;
 }
 
 .team-item {
@@ -359,12 +373,13 @@ section {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    padding-bottom: 8px;
 }
 
 .our-team-icon-list {
     display: flex;
-    justify-content: center;
     gap: 24px;
+    justify-content: center;
 }
 .icon-list {
     width: 40px;
@@ -385,6 +400,7 @@ section {
     fill: #fff;
 }
 .team-icon-wrap {
+    padding: 32px 0;
 }
 
 .portfolio {
@@ -431,6 +447,37 @@ section {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.overlay {
+    width: 360px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.p-overlay {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background: #4d5ae5;
+    padding: 40px 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translatey(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.porftfolio-item-container:hover .p-overlay {
+    transform: translateY(0);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* ----------------FOOTER----------------- */

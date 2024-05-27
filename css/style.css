@@ -233,11 +233,7 @@ section {
 
 .main-section {
     background: #2e2f42;
-    background-image:
-    linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-    ),
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NFkyKyy~Gglyc-mqV3Tyk~4BKLvTAAHh6N8TLiAdcpD702W~WE9jIMQmygDQ1pVhtTgKdXPV0lw1YzaQEHk6BtImvfXqLmWz-XJfCq0gcjWdkOWC0hGlhrtR2li8xLjFUxKc9YFpzKyRLfRo3Yp6nY5fEzkUeP4s-ELyvBhXVia6f5oX8grqLKIO6m-WDaq8b7YvKbHnkMVdhsszx8ld2l0PXz5ijp13EXbifopzwN6Xg1h6ljbDtlruNFAKqcmslwytcB2qsCk5bl4PQc3EiVMpq4lVSqvsPSOd7fmN-r3OA0r4bWqm7lrKi5pg2thlK5Vhti2KlDcVVdSJSuwn2A__);
     background-repeat: no-repeat;
     color: #fff;
@@ -297,7 +293,8 @@ section {
     border-radius: 4px;
     margin: 0 auto;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .button-text:hover {
@@ -427,6 +424,7 @@ section {
 .icon-link:hover,
 .icon-link:focus {
     background-color: #404bbf;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-icon {
@@ -444,6 +442,7 @@ section {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-portfolio {
@@ -588,4 +587,10 @@ section {
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
 }
